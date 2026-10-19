@@ -356,7 +356,7 @@ export function startHost(editorOrigin: string): () => void {
   ui.editorOrigin.textContent = editorOrigin;
   applyLocale();
 
-  if (window.location.origin === editorOrigin) {
+  if (window.location.origin === editorOrigin && window.location.hostname === 'localhost') {
     ui.frameWarning.hidden = false;
     ui.frame.hidden = true;
     ui.crossOriginLink.href = `http://127.0.0.1:${window.location.port}/host.html`;
