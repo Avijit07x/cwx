@@ -1,0 +1,158 @@
+.dialog {
+  width: min(400px, calc(100vw - var(--space-8)));
+  max-width: none;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-overlay);
+  color: var(--color-text);
+  text-align: center;
+}
+
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.dialog:not(:modal) {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  margin: auto;
+  box-shadow:
+    var(--shadow-overlay),
+    0 0 0 100vmax var(--color-scrim);
+}
+
+.dialog:focus {
+  outline: none;
+}
+
+.dialog::backdrop {
+  background: var(--color-scrim);
+}
+
+.title {
+  margin-top: var(--space-2);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: 34ch;
+  color: var(--color-text-secondary);
+}
+
+.code {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+}
+
+.action {
+  margin-top: var(--space-3);
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--color-border);
+  border-top-color: var(--color-accent);
+  border-radius: var(--radius-full);
+  animation: spin 800ms linear infinite;
+}
+
+.errorIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--color-danger-subtle);
+  color: var(--color-danger);
+}
+
+.badge {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-self: flex-start;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin: var(--space-3);
+  padding: var(--space-2) var(--space-3) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-raised);
+  font-size: var(--text-sm);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  line-height: var(--leading-tight);
+}
+
+.lifetime {
+  margin: calc(var(--space-1) * -1) 0 0 calc(8px + var(--space-2));
+  color: var(--color-text-secondary);
+  line-height: var(--leading-tight);
+}
+
+.label {
+  color: var(--color-text);
+  font-weight: var(--weight-semibold);
+}
+
+.dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: var(--color-success);
+  box-shadow: 0 0 0 3px var(--color-success-subtle);
+}
+
+.dotRenewing {
+  background: var(--color-warning);
+  box-shadow: 0 0 0 3px var(--color-warning-subtle);
+}
+
+.expired {
+  flex-direction: row;
+  gap: var(--space-2);
+  padding-bottom: var(--space-2);
+  border-color: var(--color-warning-border);
+  background: var(--color-warning-subtle);
+  color: var(--color-text);
+  animation: enter var(--duration-normal) var(--ease-out);
+}
+
+.expiredIcon {
+  flex: none;
+  margin-top: 1px;
+  color: var(--color-warning);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}

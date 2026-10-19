@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fictional host application that embeds the layout editor across origins"
+    />
+    <meta name="theme-color" content="#10233a" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230b6aa2'/%3E%3Cpath d='M9 23V9h3l8 9.5V9h3v14h-3l-8-9.5V23z' fill='%23fff'/%3E%3C/svg%3E"
+    />
+    <title>Northwind Product Selector</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#editor-frame" data-i18n="host.skip">Skip to the layout editor</a>
+    <header class="masthead">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span class="brand-name">Northwind</span>
+        <span class="brand-product" data-i18n="host.product">Product Selector</span>
+      </div>
+      <nav class="crumbs" aria-label="Breadcrumb" data-i18n-label="host.breadcrumb">
+        <ol>
+          <li data-i18n="host.nav.projects">Projects</li>
+          <li aria-current="page" class="project-name">Harbor plant · Electrical room B</li>
+        </ol>
+      </nav>
+      <div class="user">
+        <span class="avatar" aria-hidden="true">AM</span>
+        <span class="user-text">
+          <span class="user-name">Alex Morgan</span>
+          <span class="user-role" data-i18n="host.user.role">Sales engineer</span>
+        </span>
+      </div>
+    </header>
+
+    <div class="project-bar">
+      <h1 class="project-title project-name">Harbor plant · Electrical room B</h1>
+      <span class="chip" data-i18n="host.project.status">Draft</span>
+      <p class="project-meta">
+        <span data-i18n="host.project.id">Project</span>
+        <span class="mono" id="project-id">nw-prj-2041</span>
+      </p>
+    </div>
+
+    <main class="workspace">
+      <section class="card frame-card" aria-labelledby="frame-heading">
+        <h2 id="frame-heading" class="card-title" data-i18n="host.frame.heading">
+          Electrical room layout
+        </h2>
+        <div class="frame-warning" id="frame-warning" role="alert" hidden>
+          <p data-i18n="host.frame.wrongOrigin">
+            This page is open on the editor’s own origin, so the editor would not be cross-origin.
+          </p>
+          <a id="cross-origin-link" data-i18n="host.frame.openCrossOrigin" href="/host.html"
+            >Open the cross-origin demo</a
+          >
+        </div>
+        <iframe
+          id="editor-frame"
+          class="frame"
+          title="Layout editor"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </section>
+
+      <aside class="console" aria-labelledby="console-heading">
+        <h2 id="console-heading" class="console-title" data-i18n="host.console.title">
+          Integration console
+        </h2>
+
+        <section class="card" aria-labelledby="connection-heading">
+          <h3 id="connection-heading" class="card-title" data-i18n="host.connection.title">
+            Connection
+          </h3>
+          <div class="card-body">
+            <p class="status" id="connection-status" data-state="waiting">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span id="connection-text">Waiting for the editor…</span>
+            </p>
+            <dl class="facts">
+              <div>
+                <dt data-i18n="host.connection.editor">Editor origin</dt>
+                <dd class="mono" id="editor-origin"></dd>
+              </div>
+              <div>
+                <dt data-i18n="host.token.label">Access token</dt>
+                <dd>
+                  <span class="num" id="token-text">Not issued yet</span>
+                  <span class="token-meter" aria-hidden="true"
+                    ><span class="token-meter-fill" id="token-meter-fill"></span
+                  ></span>
+                </dd>
+              </div>
+            </dl>
+            <div class="actions">
+              <button type="button" class="button" id="rotate-token" disabled>
+                <span data-i18n="host.token.rotate">Rotate token now</span>
+              </button>
+              <label class="check">
+                <input type="checkbox" id="auto-renew" checked />
+                <span data-i18n="host.token.autoRenew">Renew tokens automatically</span>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="settings-heading">
+          <h3 id="settings-heading" class="card-title" data-i18n="host.settings.title">
+            Host settings
+          </h3>
+          <div class="card-body settings">
+            <label class="field" for="locale-select">
+              <span data-i18n="host.settings.language">Language</span>
+            </label>
+            <select id="locale-select" class="select">
+              <option value="en" lang="en">English</option>
+              <option value="vi" lang="vi">Tiếng Việt</option>
+            </select>
+            <label class="switch">
+              <input type="checkbox" role="switch" id="theme-switch" checked />
+              <span class="switch-track" aria-hidden="true"></span>
+              <span data-i18n="host.settings.theme">Match the Northwind theme</span>
+            </label>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="bom-heading">
+          <h3 id="bom-heading" class="card-title" data-i18n="host.bom.title">Bill of materials</h3>
+          <div class="card-body">
+            <p class="empty" id="bom-empty" data-i18n="host.bom.empty">
+              Waiting for the first layout summary from the editor.
+            </p>
+            <div id="bom-content" hidden>
+              <dl class="stats">
+                <div>
+                  <dt data-i18n="host.bom.items">Items</dt>
+                  <dd class="num" id="bom-items"></dd>
+                </div>
+                <div>
+                  <dt data-i18n="host.bom.issues">Clearance issues</dt>
+                  <dd class="num" id="bom-issues"></dd>
+                </div>
+                <div>
+                  <dt data-i18n="host.bom.total">Total</dt>
+                  <dd class="num" id="bom-total"></dd>
+                </div>
+              </dl>
+              <table class="bom-table">
+                <caption class="sr-only" data-i18n="host.bom.caption">
+                  Parts reported by the editor
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col" data-i18n="host.bom.part">Part no.</th>
+                    <th scope="col" class="quantity" data-i18n="host.bom.quantity">Qty</th>
+                  </tr>
+                </thead>
+                <tbody id="bom-lines"></tbody>
+              </table>
+              <p class="note">
+                <span data-i18n="host.bom.height">Editor content height</span>
+                <span class="num" id="frame-height">—</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card log-card" aria-labelledby="log-heading">
+          <div class="card-head">
+            <h3 id="log-heading" class="card-title" data-i18n="host.log.title">Message log</h3>
+            <button type="button" class="button button-quiet" id="clear-log">
+              <span data-i18n="host.log.clear">Clear</span>
+            </button>
+          </div>
+          <p class="empty" id="log-empty" data-i18n="host.log.empty">No messages yet.</p>
+          <ol class="log" id="message-log" aria-labelledby="log-heading" tabindex="0"></ol>
+        </section>
+      </aside>
+    </main>
+
+    <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/host/main.ts"></script>
+  </body>
+</html>
