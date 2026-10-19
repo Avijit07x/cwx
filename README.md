@@ -60,6 +60,12 @@ The benchmark page takes `?model=raw|opt|lod1|lod2` (`opt` is LOD0), `&copies=1|
 | `pnpm measure:bench <out.json>`                                   | Cold-load and frame times of every model variant on the benchmark page, with the same options and GPU check                                                                                                                                                                                                                                              |
 | `pnpm measure:domain`                                             | Times the domain code in Node (clearance check, bill of materials, a move, clearing, draft load and undo) at 500 to 10,000 items                                                                                                                                                                                                                         |
 
+## Quality tooling
+
+- `pnpm knip` finds unused files, exports and dependencies (Knip, configured in `knip.json`); it must report nothing.
+- Git hooks (Husky, installed by `pnpm install`): before a commit, lint-staged runs `eslint --fix` and `prettier --write` on the staged files; the commit message must follow Conventional Commits, such as `feat(scope): …`, `test(e2e): …`, `docs: …` or `chore: …` (commitlint).
+- CI (`.github/workflows/ci.yml`) runs on pushes and pull requests to `main`: `pnpm check`, `pnpm knip`, then the browser tests, and keeps the Playwright report when a step fails. There is no dependency-update bot.
+
 ## Features
 
 Required:
