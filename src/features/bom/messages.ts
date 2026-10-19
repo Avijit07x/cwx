@@ -1,0 +1,38 @@
+import { defineMessages } from '../../i18n/define';
+
+export const bomMessages = defineMessages(
+  {
+    'bom.title': 'Bill of materials',
+    'bom.summary': '{items} · {total}',
+    'bom.items.one': '{count} item',
+    'bom.items.other': '{count} items',
+    'bom.toggle': 'Show or hide the table',
+    'bom.caption': 'Equipment counted from the layout, with part numbers and prices',
+    'bom.colItem': 'Item',
+    'bom.colPart': 'Part no.',
+    'bom.colUnit': 'Unit price',
+    'bom.colQty': 'Quantity',
+    'bom.colTotal': 'Line total',
+    'bom.total': 'Total',
+    'bom.empty': 'No equipment yet',
+    'bom.emptyHint': 'Items you place are counted here with part numbers and prices.',
+    'bom.note': 'Prices are illustrative, in USD.',
+  },
+  {
+    'bom.title': 'Bảng kê vật tư',
+    'bom.summary': '{items} · {total}',
+    'bom.items.one': '{count} thiết bị',
+    'bom.items.other': '{count} thiết bị',
+    'bom.toggle': 'Hiện hoặc ẩn bảng',
+    'bom.caption': 'Thiết bị được đếm từ bố trí, kèm mã hàng và giá',
+    'bom.colItem': 'Thiết bị',
+    'bom.colPart': 'Mã hàng',
+    'bom.colUnit': 'Đơn giá',
+    'bom.colQty': 'Số lượng',
+    'bom.colTotal': 'Thành tiền',
+    'bom.total': 'Tổng cộng',
+    'bom.empty': 'Chưa có thiết bị',
+    'bom.emptyHint': 'Các thiết bị bạn đặt sẽ được đếm ở đây kèm mã hàng và giá.',
+    'bom.note': 'Giá chỉ mang tính minh họa, tính bằng USD.',
+  },
+);
