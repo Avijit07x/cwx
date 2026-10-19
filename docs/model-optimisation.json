@@ -1,0 +1,1634 @@
+{
+  "model": {
+    "name": "ABeautifulGame",
+    "title": "A Beautiful Game",
+    "slug": "a-beautiful-game",
+    "repository": "https://github.com/KhronosGroup/glTF-Sample-Assets",
+    "commit": "edc7c9e67c639d230715049ee31f9a96a6babbbe",
+    "page": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/edc7c9e67c639d230715049ee31f9a96a6babbbe/Models/ABeautifulGame",
+    "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/edc7c9e67c639d230715049ee31f9a96a6babbbe/Models/ABeautifulGame/glTF-Binary/ABeautifulGame.glb",
+    "bytes": 42977928,
+    "sha256": "bd7133b4b322aae97c589b8839dae8155ad2546acb35ae32a127e722a959d007",
+    "licence": "CC-BY-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credit": "© 2020 ASWF, MaterialX Project (original model by Moeen Sayed and Mujtaba Sayed for SideFX), © 2022 Ed Mackey (conversion to glTF), CC BY 4.0"
+  },
+  "tools": {
+    "node": "v24.22.0",
+    "gltfTransform": "v4.5.1",
+    "meshoptimizer": "1.3.0",
+    "sharp": "0.35.5",
+    "three": "0.186.1",
+    "ktxSoftware": "4.4.2"
+  },
+  "variants": [
+    {
+      "id": "raw",
+      "label": "Raw (as downloaded)",
+      "file": "public/models/raw/ABeautifulGame.glb",
+      "bytes": 42977928,
+      "transferSecondsAt10Mbps": 34.38,
+      "simplifyError": null,
+      "colourTextureSize": null,
+      "dataTextureSize": null,
+      "meshes": 15,
+      "primitives": 15,
+      "materials": 15,
+      "drawCalls": 49,
+      "instancedDrawCalls": 0,
+      "triangles": 1499072,
+      "vertices": 417028,
+      "textures": [
+        {
+          "name": "texture 1",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 361127,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 2",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 673915,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 3",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 622771,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 4",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 403990,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 5",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 850400,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 6",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 630950,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 7",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 366216,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 8",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 764089,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 9",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 782417,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 10",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 395138,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 11",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 961725,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 12",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 822486,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 13",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 295346,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 14",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 777060,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 15",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 741172,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 16",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 309191,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 17",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 662916,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 18",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 709227,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 19",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 529405,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 20",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 727372,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 21",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 582751,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 22",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 750313,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 23",
+          "slots": [
+            "metallicRoughnessTexture",
+            "occlusionTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 792174,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 24",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 303807,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 25",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 315179,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 26",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 394527,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 27",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 491396,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 28",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 1371413,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 29",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 334252,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 30",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 244999,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 31",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 215780,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 32",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 350946,
+          "gpuBytes": 22369621
+        },
+        {
+          "name": "texture 33",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "format": "JPEG",
+          "bytes": 395645,
+          "gpuBytes": 22369621
+        }
+      ],
+      "textureBytes": 18930095,
+      "textureGpuBytes": 738197493,
+      "extensions": [
+        "KHR_materials_transmission",
+        "KHR_materials_volume"
+      ],
+      "trianglesVsRaw": 1
+    },
+    {
+      "id": "opt",
+      "label": "LOD0 (optimised)",
+      "file": "public/models/a-beautiful-game/lod0.glb",
+      "bytes": 5566536,
+      "transferSecondsAt10Mbps": 4.45,
+      "simplifyError": 0.001,
+      "colourTextureSize": 1024,
+      "dataTextureSize": 512,
+      "meshes": 15,
+      "primitives": 15,
+      "materials": 15,
+      "drawCalls": 15,
+      "instancedDrawCalls": 10,
+      "triangles": 144218,
+      "vertices": 55071,
+      "textures": [
+        {
+          "name": "texture 1",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "format": "KTX2 ETC1S",
+          "bytes": 123330,
+          "gpuBytes": 699051
+        },
+        {
+          "name": "texture 2",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 197434,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 3",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 140340,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 4",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "format": "KTX2 ETC1S",
+          "bytes": 125377,
+          "gpuBytes": 699051
+        },
+        {
+          "name": "texture 5",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 203729,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 6",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 138826,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 7",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "format": "KTX2 ETC1S",
+          "bytes": 131551,
+          "gpuBytes": 699051
+        },
+        {
+          "name": "texture 8",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 216327,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 9",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 173481,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 10",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "format": "KTX2 ETC1S",
+          "bytes": 141283,
+          "gpuBytes": 699051
+        },
+        {
+          "name": "texture 11",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 256561,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 12",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 173619,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 13",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "format": "KTX2 ETC1S",
+          "bytes": 101202,
+          "gpuBytes": 699051
+        },
+        {
+          "name": "texture 14",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 176672,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 15",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 153739,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 16",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "format": "KTX2 ETC1S",
+          "bytes": 106402,
+          "gpuBytes": 699051
+        },
+        {
+          "name": "texture 17",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 174769,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 18",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 152130,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 19",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "format": "KTX2 UASTC",
+          "bytes": 353922,
+          "gpuBytes": 1398101
+        },
+        {
+          "name": "texture 20",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 152414,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 21",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 127675,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 22",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 235138,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 23",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 148315,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 24",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "format": "KTX2 ETC1S",
+          "bytes": 109537,
+          "gpuBytes": 699051
+        },
+        {
+          "name": "texture 25",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "format": "KTX2 ETC1S",
+          "bytes": 105307,
+          "gpuBytes": 699051
+        },
+        {
+          "name": "texture 26",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "format": "KTX2 ETC1S",
+          "bytes": 124181,
+          "gpuBytes": 699051
+        },
+        {
+          "name": "texture 27",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 112330,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 28",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 217245,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 29",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "format": "KTX2 ETC1S",
+          "bytes": 124933,
+          "gpuBytes": 699051
+        },
+        {
+          "name": "texture 30",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "format": "KTX2 ETC1S",
+          "bytes": 103721,
+          "gpuBytes": 699051
+        },
+        {
+          "name": "texture 31",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 138441,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 32",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 UASTC",
+          "bytes": 110955,
+          "gpuBytes": 349525
+        },
+        {
+          "name": "texture 33",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "format": "KTX2 ETC1S",
+          "bytes": 128272,
+          "gpuBytes": 699051
+        }
+      ],
+      "textureBytes": 5179158,
+      "textureGpuBytes": 16777213,
+      "extensions": [
+        "EXT_mesh_gpu_instancing",
+        "EXT_meshopt_compression",
+        "KHR_materials_transmission",
+        "KHR_materials_volume",
+        "KHR_mesh_quantization",
+        "KHR_texture_basisu"
+      ],
+      "trianglesVsRaw": 0.096205
+    },
+    {
+      "id": "lod1",
+      "label": "LOD1",
+      "file": "public/models/a-beautiful-game/lod1.glb",
+      "bytes": 1759768,
+      "transferSecondsAt10Mbps": 1.41,
+      "simplifyError": 0.002,
+      "colourTextureSize": 512,
+      "dataTextureSize": 256,
+      "meshes": 15,
+      "primitives": 15,
+      "materials": 15,
+      "drawCalls": 15,
+      "instancedDrawCalls": 10,
+      "triangles": 95352,
+      "vertices": 44469,
+      "textures": [
+        {
+          "name": "texture 1",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 ETC1S",
+          "bytes": 40383,
+          "gpuBytes": 174763
+        },
+        {
+          "name": "texture 2",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 55609,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 3",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 39785,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 4",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 ETC1S",
+          "bytes": 38787,
+          "gpuBytes": 174763
+        },
+        {
+          "name": "texture 5",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 57289,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 6",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 38925,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 7",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 ETC1S",
+          "bytes": 43798,
+          "gpuBytes": 174763
+        },
+        {
+          "name": "texture 8",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 59797,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 9",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 48522,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 10",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 ETC1S",
+          "bytes": 45255,
+          "gpuBytes": 174763
+        },
+        {
+          "name": "texture 11",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 68738,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 12",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 48796,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 13",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 ETC1S",
+          "bytes": 34964,
+          "gpuBytes": 174763
+        },
+        {
+          "name": "texture 14",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 47501,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 15",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 43668,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 16",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 ETC1S",
+          "bytes": 35625,
+          "gpuBytes": 174763
+        },
+        {
+          "name": "texture 17",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 46649,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 18",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 43238,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 19",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 ETC1S",
+          "bytes": 41452,
+          "gpuBytes": 174763
+        },
+        {
+          "name": "texture 20",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 25573,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 21",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 35681,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 22",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 56954,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 23",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 42579,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 24",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 ETC1S",
+          "bytes": 37199,
+          "gpuBytes": 174763
+        },
+        {
+          "name": "texture 25",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 ETC1S",
+          "bytes": 35195,
+          "gpuBytes": 174763
+        },
+        {
+          "name": "texture 26",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 ETC1S",
+          "bytes": 39906,
+          "gpuBytes": 174763
+        },
+        {
+          "name": "texture 27",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 37535,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 28",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 60096,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 29",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 ETC1S",
+          "bytes": 40576,
+          "gpuBytes": 174763
+        },
+        {
+          "name": "texture 30",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 ETC1S",
+          "bytes": 35693,
+          "gpuBytes": 174763
+        },
+        {
+          "name": "texture 31",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 45950,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 32",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 32705,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 33",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 512,
+          "height": 512,
+          "format": "KTX2 ETC1S",
+          "bytes": 41203,
+          "gpuBytes": 174763
+        }
+      ],
+      "textureBytes": 1445626,
+      "textureGpuBytes": 4019539,
+      "extensions": [
+        "EXT_mesh_gpu_instancing",
+        "EXT_meshopt_compression",
+        "KHR_materials_transmission",
+        "KHR_materials_volume",
+        "KHR_mesh_quantization",
+        "KHR_texture_basisu"
+      ],
+      "trianglesVsRaw": 0.063607
+    },
+    {
+      "id": "lod2",
+      "label": "LOD2",
+      "file": "public/models/a-beautiful-game/lod2.glb",
+      "bytes": 705040,
+      "transferSecondsAt10Mbps": 0.56,
+      "simplifyError": 0.004,
+      "colourTextureSize": 256,
+      "dataTextureSize": 128,
+      "meshes": 15,
+      "primitives": 15,
+      "materials": 15,
+      "drawCalls": 15,
+      "instancedDrawCalls": 10,
+      "triangles": 68326,
+      "vertices": 37626,
+      "textures": [
+        {
+          "name": "texture 1",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 ETC1S",
+          "bytes": 11785,
+          "gpuBytes": 43691
+        },
+        {
+          "name": "texture 2",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 15586,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 3",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 12446,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 4",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 ETC1S",
+          "bytes": 11495,
+          "gpuBytes": 43691
+        },
+        {
+          "name": "texture 5",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 16098,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 6",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 12003,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 7",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 ETC1S",
+          "bytes": 12864,
+          "gpuBytes": 43691
+        },
+        {
+          "name": "texture 8",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 16186,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 9",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 14330,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 10",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 ETC1S",
+          "bytes": 12991,
+          "gpuBytes": 43691
+        },
+        {
+          "name": "texture 11",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 17942,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 12",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 14607,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 13",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 ETC1S",
+          "bytes": 10734,
+          "gpuBytes": 43691
+        },
+        {
+          "name": "texture 14",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 12511,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 15",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 13300,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 16",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 ETC1S",
+          "bytes": 10789,
+          "gpuBytes": 43691
+        },
+        {
+          "name": "texture 17",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 11993,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 18",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 13262,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 19",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 UASTC",
+          "bytes": 33977,
+          "gpuBytes": 87381
+        },
+        {
+          "name": "texture 20",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 6273,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 21",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 10694,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 22",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 12865,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 23",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 12981,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 24",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 ETC1S",
+          "bytes": 11303,
+          "gpuBytes": 43691
+        },
+        {
+          "name": "texture 25",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 ETC1S",
+          "bytes": 10547,
+          "gpuBytes": 43691
+        },
+        {
+          "name": "texture 26",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 ETC1S",
+          "bytes": 11178,
+          "gpuBytes": 43691
+        },
+        {
+          "name": "texture 27",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 12400,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 28",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 17252,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 29",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 ETC1S",
+          "bytes": 11691,
+          "gpuBytes": 43691
+        },
+        {
+          "name": "texture 30",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 ETC1S",
+          "bytes": 10476,
+          "gpuBytes": 43691
+        },
+        {
+          "name": "texture 31",
+          "slots": [
+            "normalTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 13664,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 32",
+          "slots": [
+            "occlusionTexture",
+            "metallicRoughnessTexture"
+          ],
+          "width": 128,
+          "height": 128,
+          "format": "KTX2 UASTC",
+          "bytes": 10471,
+          "gpuBytes": 21845
+        },
+        {
+          "name": "texture 33",
+          "slots": [
+            "baseColorTexture"
+          ],
+          "width": 256,
+          "height": 256,
+          "format": "KTX2 ETC1S",
+          "bytes": 11742,
+          "gpuBytes": 43691
+        }
+      ],
+      "textureBytes": 438436,
+      "textureGpuBytes": 1048573,
+      "extensions": [
+        "EXT_mesh_gpu_instancing",
+        "EXT_meshopt_compression",
+        "KHR_materials_transmission",
+        "KHR_materials_volume",
+        "KHR_mesh_quantization",
+        "KHR_texture_basisu"
+      ],
+      "trianglesVsRaw": 0.045579
+    }
+  ]
+}

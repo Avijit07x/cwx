@@ -1,0 +1,166 @@
+import { defineMessages } from '../i18n/define';
+import { createTranslate } from '../i18n/engine';
+import type { Locale } from '../i18n/locales';
+
+export const benchMessages = defineMessages(
+  {
+    'bench.title': 'Model benchmark',
+    'bench.documentTitle': 'Model benchmark · {model}',
+    'bench.language': 'Language',
+    'bench.config': 'Benchmark configuration',
+    'bench.config.model': 'Model',
+    'bench.config.copies': 'Copies',
+    'bench.config.instancing': 'Instancing',
+    'bench.variant.raw': 'Raw',
+    'bench.variant.opt': 'LOD0 optimised',
+    'bench.variant.lod1': 'LOD1',
+    'bench.variant.lod2': 'LOD2',
+    'bench.on': 'On',
+    'bench.off': 'Off',
+    'bench.runAgain': 'Run again',
+    'bench.scene': '{copies} × {model} · Instancing: {instancing}',
+    'bench.status': 'Status',
+    'bench.status.starting': 'Starting…',
+    'bench.status.load': 'Load run {run} of {total}',
+    'bench.status.warmup': 'Warming up for {seconds} s',
+    'bench.status.measure': 'Measuring frame time for {seconds} s',
+    'bench.status.done': 'Done. Run again for a fresh cold-cache measurement.',
+    'bench.progress': 'Benchmark progress',
+    'bench.missing.title': 'Model file not found',
+    'bench.missing.raw':
+      'The raw model is not committed to the repository. Run {command}, then reload this page.',
+    'bench.missing.lod': 'Run {command} to build the optimised models, then reload this page.',
+    'bench.failed.title': 'The benchmark failed',
+    'bench.failed.crash': 'The 3D view stopped working.',
+    'bench.unsupported.title': 'WebGL is not available',
+    'bench.unsupported.body':
+      'This browser or device has WebGL turned off, so the benchmark cannot run.',
+    'bench.results': 'Results',
+    'bench.group.config': 'Configuration',
+    'bench.group.load': 'Load, cold cache',
+    'bench.group.frame': 'Frame time',
+    'bench.group.renderer': 'Renderer',
+    'bench.group.environment': 'Environment',
+    'bench.row.file': 'Model file',
+    'bench.row.size': 'File size',
+    'bench.row.copies': 'Copies',
+    'bench.row.instancing': 'Instancing',
+    'bench.row.loadMedian': 'Load time, median of {runs}',
+    'bench.row.loadRuns': 'Load runs',
+    'bench.row.frameAvg': 'Frame time, average',
+    'bench.row.frameP95': 'Frame time, 95th percentile',
+    'bench.row.fps': 'Frame rate, average',
+    'bench.row.cpu': 'CPU time in render(), average',
+    'bench.row.frames': 'Frames measured',
+    'bench.row.drawCalls': 'Draw calls per frame',
+    'bench.row.triangles': 'Triangles per frame',
+    'bench.row.resources': 'Geometries / textures / shader programs',
+    'bench.row.heap': 'JS heap used',
+    'bench.row.gpu': 'GPU',
+    'bench.row.canvas': 'Canvas',
+    'bench.row.dpr': 'Device pixel ratio',
+    'bench.row.browser': 'Browser',
+    'bench.value.pending': 'Pending',
+    'bench.value.unavailable': 'Not available',
+    'bench.value.bytes': '{size} ({bytes} bytes)',
+    'bench.value.instancingOn': 'On: one InstancedMesh per primitive',
+    'bench.value.instancingOff': 'Off: one cloned scene per copy',
+    'bench.value.canvas': '{width} × {height} CSS px, {bufferWidth} × {bufferHeight} device px',
+    'bench.value.fps': '{value} fps',
+    'bench.method': 'Method',
+    'bench.method.load':
+      'Each load run fetches the file with cache: no-store, then times fetch, Meshopt and KTX2 decoding and the first rendered frame, read back from the GPU. The median of {runs} runs is reported. Decoders stay initialised between runs, as they would in the editor.',
+    'bench.method.frame':
+      'Frame time is the interval between animation frames over {measure} s of continuous rendering after a {warmup} s warm-up. Each frame ends with a read-back from the GPU, so the interval includes the GPU’s work for that frame. A scene that renders faster than the display refresh rate is capped by vsync; add copies, or compare the CPU time in render(), to see differences below that cap.',
+    'bench.credit': 'Model credit',
+  },
+  {
+    'bench.title': 'Đo hiệu năng mô hình',
+    'bench.documentTitle': 'Đo hiệu năng mô hình · {model}',
+    'bench.language': 'Ngôn ngữ',
+    'bench.config': 'Cấu hình phép đo',
+    'bench.config.model': 'Mô hình',
+    'bench.config.copies': 'Số bản sao',
+    'bench.config.instancing': 'Instancing',
+    'bench.variant.raw': 'Gốc',
+    'bench.variant.opt': 'LOD0 đã tối ưu',
+    'bench.variant.lod1': 'LOD1',
+    'bench.variant.lod2': 'LOD2',
+    'bench.on': 'Bật',
+    'bench.off': 'Tắt',
+    'bench.runAgain': 'Chạy lại',
+    'bench.scene': '{copies} × {model} · Instancing: {instancing}',
+    'bench.status': 'Trạng thái',
+    'bench.status.starting': 'Đang bắt đầu…',
+    'bench.status.load': 'Lần tải {run}/{total}',
+    'bench.status.warmup': 'Đang khởi động trong {seconds} giây',
+    'bench.status.measure': 'Đang đo thời gian khung hình trong {seconds} giây',
+    'bench.status.done': 'Hoàn tất. Chạy lại để đo mới với bộ nhớ đệm trống.',
+    'bench.progress': 'Tiến độ phép đo',
+    'bench.missing.title': 'Không tìm thấy tệp mô hình',
+    'bench.missing.raw':
+      'Mô hình gốc không có trong kho mã. Chạy {command}, sau đó tải lại trang này.',
+    'bench.missing.lod': 'Chạy {command} để tạo các mô hình đã tối ưu, sau đó tải lại trang này.',
+    'bench.failed.title': 'Phép đo thất bại',
+    'bench.failed.crash': 'Chế độ xem 3D đã ngừng hoạt động.',
+    'bench.unsupported.title': 'WebGL không khả dụng',
+    'bench.unsupported.body':
+      'Trình duyệt hoặc thiết bị này đã tắt WebGL nên không thể chạy phép đo.',
+    'bench.results': 'Kết quả',
+    'bench.group.config': 'Cấu hình',
+    'bench.group.load': 'Tải, bộ nhớ đệm trống',
+    'bench.group.frame': 'Thời gian khung hình',
+    'bench.group.renderer': 'Bộ kết xuất',
+    'bench.group.environment': 'Môi trường',
+    'bench.row.file': 'Tệp mô hình',
+    'bench.row.size': 'Kích thước tệp',
+    'bench.row.copies': 'Số bản sao',
+    'bench.row.instancing': 'Instancing',
+    'bench.row.loadMedian': 'Thời gian tải, trung vị của {runs} lần',
+    'bench.row.loadRuns': 'Các lần tải',
+    'bench.row.frameAvg': 'Thời gian khung hình, trung bình',
+    'bench.row.frameP95': 'Thời gian khung hình, phân vị 95',
+    'bench.row.fps': 'Tốc độ khung hình, trung bình',
+    'bench.row.cpu': 'Thời gian CPU trong render(), trung bình',
+    'bench.row.frames': 'Số khung hình đã đo',
+    'bench.row.drawCalls': 'Lệnh vẽ mỗi khung hình',
+    'bench.row.triangles': 'Tam giác mỗi khung hình',
+    'bench.row.resources': 'Hình học / texture / chương trình shader',
+    'bench.row.heap': 'Bộ nhớ heap JS đã dùng',
+    'bench.row.gpu': 'GPU',
+    'bench.row.canvas': 'Khung vẽ',
+    'bench.row.dpr': 'Tỉ lệ điểm ảnh thiết bị',
+    'bench.row.browser': 'Trình duyệt',
+    'bench.value.pending': 'Đang chờ',
+    'bench.value.unavailable': 'Không khả dụng',
+    'bench.value.bytes': '{size} ({bytes} byte)',
+    'bench.value.instancingOn': 'Bật: một InstancedMesh cho mỗi primitive',
+    'bench.value.instancingOff': 'Tắt: mỗi bản sao là một cảnh nhân bản',
+    'bench.value.canvas': '{width} × {height} px CSS, {bufferWidth} × {bufferHeight} px thiết bị',
+    'bench.value.fps': '{value} khung hình/giây',
+    'bench.method': 'Phương pháp',
+    'bench.method.load':
+      'Mỗi lần tải lấy tệp với cache: no-store, rồi đo thời gian tải, giải mã Meshopt và KTX2 và khung hình đầu tiên đã kết xuất, đọc lại từ GPU. Kết quả là trung vị của {runs} lần. Bộ giải mã được giữ nguyên giữa các lần, giống như trong trình chỉnh sửa.',
+    'bench.method.frame':
+      'Thời gian khung hình là khoảng cách giữa các khung hình hoạt ảnh trong {measure} giây kết xuất liên tục sau {warmup} giây khởi động. Mỗi khung hình kết thúc bằng một lần đọc lại từ GPU, nên khoảng cách này bao gồm cả công việc của GPU cho khung hình đó. Cảnh kết xuất nhanh hơn tần số làm mới của màn hình sẽ bị giới hạn bởi vsync; hãy tăng số bản sao hoặc so sánh thời gian CPU trong render() để thấy khác biệt dưới giới hạn đó.',
+    'bench.credit': 'Ghi công mô hình',
+  },
+);
+
+export type BenchMessageKey = keyof typeof benchMessages.en;
+export type BenchTranslate = (
+  key: BenchMessageKey,
+  params?: Readonly<Record<string, string | number>>,
+) => string;
+
+const translate = createTranslate(benchMessages);
+const translators = new Map<Locale, BenchTranslate>();
+
+export function benchTranslator(locale: Locale): BenchTranslate {
+  let translator = translators.get(locale);
+  if (!translator) {
+    translator = (key, params) => translate(locale, key, params);
+    translators.set(locale, translator);
+  }
+  return translator;
+}
