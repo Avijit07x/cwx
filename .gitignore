@@ -1,0 +1,16 @@
+node_modules
+dist
+coverage
+*.local
+*.tsbuildinfo
+.DS_Store
+.vite
+.playwright-mcp
+test-results/
+playwright-report/
+blob-report/
+
+assets-src/
+public/models/raw/
+
+docs/design/
