@@ -1,0 +1,128 @@
+.app {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    'top top top'
+    'side work inspector'
+    'status status status';
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr) var(--inspector-width);
+  grid-template-rows: var(--topbar-height) minmax(0, 1fr) var(--statusbar-height);
+  height: 100%;
+  overflow: clip;
+}
+
+.top {
+  grid-area: top;
+  min-width: 0;
+}
+
+.sidebar {
+  display: flex;
+  grid-area: side;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden auto;
+  border-right: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.itemList {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 240px;
+}
+
+.workspace {
+  display: flex;
+  grid-area: work;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.viewport {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--color-viewport);
+}
+
+.inspector {
+  display: flex;
+  grid-area: inspector;
+  flex-direction: column;
+  min-height: 0;
+  border-left: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.inspectorTabs {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.inspectPanel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden auto;
+}
+
+.assistantPanel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden auto;
+}
+
+.status {
+  grid-area: status;
+  min-width: 0;
+}
+
+@media (max-width: 1200px) {
+  .app {
+    --sidebar-width: 240px;
+    --inspector-width: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-areas:
+      'top'
+      'side'
+      'work'
+      'inspector'
+      'status';
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: var(--topbar-height) auto auto auto minmax(var(--statusbar-height), auto);
+    height: auto;
+    min-height: 100%;
+    overflow: visible;
+  }
+
+  .viewport {
+    flex: none;
+    height: min(60vh, 75vw);
+    min-height: min(320px, 70dvh);
+  }
+
+  .sidebar,
+  .inspector {
+    border: 0;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .sidebar,
+  .inspectPanel,
+  .assistantPanel {
+    overflow: visible;
+  }
+}
