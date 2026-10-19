@@ -20,7 +20,7 @@ import { applyTheme, isReadableAccent, MIN_ACCENT_CONTRAST } from './theme';
 
 export const INIT_TIMEOUT_MS = 8000;
 export const TOKEN_REFRESH_LEAD_MS = 60_000;
-export const TOKEN_REQUEST_INTERVAL_MS = 10_000;
+const TOKEN_REQUEST_INTERVAL_MS = 10_000;
 export const LAYOUT_DEBOUNCE_MS = 300;
 export const RESIZE_DEBOUNCE_MS = 100;
 const MAX_TIMER_DELAY_MS = 2 ** 31 - 1;
