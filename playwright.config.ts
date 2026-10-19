@@ -9,7 +9,7 @@ export default defineConfig({
   testDir: 'e2e',
   forbidOnly: CI,
   retries: CI ? 2 : 0,
-  reporter: CI ? 'github' : 'list',
+  reporter: CI ? [['github'], ['html', { open: 'never' }]] : 'list',
   use: {
     browserName: 'chromium',
     headless: true,
