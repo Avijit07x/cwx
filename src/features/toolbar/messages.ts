@@ -1,0 +1,38 @@
+import { defineMessages } from '../../i18n/define';
+
+export const toolbarMessages = defineMessages(
+  {
+    'toolbar.label': 'Edit tools',
+    'toolbar.project': 'Project: {name}',
+    'toolbar.sampleProject': 'Sample electrical room',
+    'toolbar.signedInAs': 'Signed in as {name}',
+    'toolbar.undo': 'Undo',
+    'toolbar.undoAction': 'Undo: {action}',
+    'toolbar.redo': 'Redo',
+    'toolbar.redoAction': 'Redo: {action}',
+    'toolbar.rotateCcw': 'Rotate counter-clockwise',
+    'toolbar.rotateCw': 'Rotate clockwise',
+    'toolbar.duplicate': 'Duplicate',
+    'toolbar.delete': 'Delete',
+    'toolbar.clear': 'Clear layout',
+    'toolbar.language': 'Language',
+    'toolbar.assistant': 'Assistant',
+  },
+  {
+    'toolbar.label': 'Công cụ chỉnh sửa',
+    'toolbar.project': 'Dự án: {name}',
+    'toolbar.sampleProject': 'Phòng điện mẫu',
+    'toolbar.signedInAs': 'Đã đăng nhập: {name}',
+    'toolbar.undo': 'Hoàn tác',
+    'toolbar.undoAction': 'Hoàn tác: {action}',
+    'toolbar.redo': 'Làm lại',
+    'toolbar.redoAction': 'Làm lại: {action}',
+    'toolbar.rotateCcw': 'Xoay ngược chiều kim đồng hồ',
+    'toolbar.rotateCw': 'Xoay theo chiều kim đồng hồ',
+    'toolbar.duplicate': 'Nhân bản',
+    'toolbar.delete': 'Xóa',
+    'toolbar.clear': 'Xóa bố trí',
+    'toolbar.language': 'Ngôn ngữ',
+    'toolbar.assistant': 'Trợ lý',
+  },
+);
